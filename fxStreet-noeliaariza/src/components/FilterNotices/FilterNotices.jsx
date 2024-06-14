@@ -1,21 +1,27 @@
 import "./FilterNotices.scss";
+import { CiFilter } from "react-icons/ci";
 
 function FilterNotices() {
   return (
     <>
-      <div className="filterNotices">
-        <div className="filterNotices__latestPopular">
-          <a>Latest</a>
+      <div className="filter-notices-main">
+        <div className="filter-notices-main__part01">
+          <a className="active">Latest</a>
           <a>Popular</a>
         </div>
-        <div className="filterNotices__showSelect">
+        <div className="filter-notices__select desktop-only">
           <span>Show:</span>
-          <select name="showNotices" id="showNotices">
+          <select
+            name="showNotices"
+            id="showNotices"
+            className="filter-notices__select__form"
+          >
             <option value="All">All</option>
             <option value="valueOne">Filter one</option>
             <option value="valueTwo">Filter two</option>
           </select>
         </div>
+        <CiFilter size={21} color="#8c8d91" className="mobile-only" />
       </div>
     </>
   );

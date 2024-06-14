@@ -3,8 +3,8 @@ import Notice from "../Notice/Notice";
 
 function NoticeList() {
   return (
-    <div className="noticesList">
-      <ul className="noticesList__ul">
+    <div className="notices-list">
+      <ul className="notices-list__ul">
         <li>
           <Notice />
         </li>

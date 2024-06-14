@@ -1,0 +1,62 @@
+@import "../../core/variables";
+.desktop-only {
+  display: none;
+}
+.mobile-only {
+  display: block;
+}
+
+.filter-notices-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 35px;
+
+  &__part01 a {
+    font-weight: 700;
+    color: $grey_8C8D91;
+    cursor: pointer;
+    &:last-child {
+      margin-left: 40px;
+    }
+    &:hover {
+      color: $blue_corp;
+    }
+  }
+}
+
+.active {
+  color: $orange_E4871B !important;
+}
+
+@media (min-width: $breakpoint-large) {
+  .desktop-only {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
+  }
+
+  .filter-notices__select span {
+    color: $grey_49494F;
+    font-size: 14px;
+  }
+}
+
+#showNotices {
+  width: 70px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  color: $grey_49494F;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+select option {
+  background-color: #fff;
+  color: #333;
+  padding: 5px;
+  font-size: 18px;
+}

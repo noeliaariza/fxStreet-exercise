@@ -10,14 +10,14 @@ import { useMediaQuery } from "react-responsive";
 
 function App() {
   //const [count, setCount] = useState(0);
-  const isDesktop = useMediaQuery({ minWidth: 768 });
+  const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   return (
     <div className="container">
       <AsideLeft />
-      <div>
+      <div className="container__main">
         {isDesktop ? <HeaderDesktop /> : <HeaderMobile />}
-        <div className="container__secondary">
+        <div className="container__main__secondary">
           <div>
             <FilterNotices />
             <NoticeList />

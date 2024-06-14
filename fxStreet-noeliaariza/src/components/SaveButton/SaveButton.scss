@@ -1,0 +1,14 @@
+@import "../../core/variables";
+.iconSave-container {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.iconSave {
+  fill: #e0e0e0;
+  transition: fill 0.3s ease;
+}
+
+.iconSave--clicked {
+  fill: $blue_304C70;
+}

@@ -1,0 +1,14 @@
+@import "../../core/variables";
+.icon-container {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.icon {
+  fill: #e0e0e0;
+  transition: fill 0.3s ease;
+}
+
+.icon--clicked {
+  fill: $red_D25746;
+}
