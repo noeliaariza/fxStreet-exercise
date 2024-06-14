@@ -1,0 +1,15 @@
+@import "core/_reset";
+@import "core/_variables";
+
+body {
+  background-color: $grey_ECECF1;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+
+  &__secondary {
+    display: flex;
+  }
+}

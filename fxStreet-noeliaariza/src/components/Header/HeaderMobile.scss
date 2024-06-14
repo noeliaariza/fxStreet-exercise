@@ -1,0 +1,17 @@
+@import "../../core/variables";
+
+.header-mobile {
+  width: 100vw;
+  height: 55px;
+  background-color: $blue_corp;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  &logo {
+    width: 137px;
+    height: auto;
+  }
+  &__right span {
+    padding-left: 20px;
+  }
+}

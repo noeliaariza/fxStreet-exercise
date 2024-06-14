@@ -1,3 +1,53 @@
+@import "../../core/variables";
+
 .aside-right {
   display: none;
+}
+
+@media (min-width: $breakpoint-large) {
+  .aside-right {
+    display: block;
+    margin: 25px;
+
+    &__widget {
+      width: 410px;
+      height: 154px;
+      background-color: $blue_304C70;
+
+      padding-top: 35px;
+      padding-left: 20px;
+      border-radius: 4px;
+
+      a {
+        display: inline-block;
+        width: 327px;
+        height: 10px;
+        background-color: $white;
+        margin-bottom: 15px;
+      }
+    }
+    &__button {
+      width: 408px;
+      height: 56px;
+      background-color: transparent;
+      border: 2px solid $blue_304C70;
+      border-radius: 4px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        display: inline-block;
+        width: 109px;
+        height: 10px;
+        background-color: $blue_304C70;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.secondary-link {
+  width: 195px !important;
 }

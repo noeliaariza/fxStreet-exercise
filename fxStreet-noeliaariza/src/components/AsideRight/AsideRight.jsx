@@ -1,12 +1,16 @@
 import "./AsideRight.scss";
+import { MdCircle } from "react-icons/md";
 
 function asideRight() {
   return (
     <div className="aside-right">
-      <div className="aside-right__widget"></div>
+      <div className="aside-right__widget">
+        <a></a>
+        <a className="secondary-link"></a>
+      </div>
       <button className="aside-right__button">
-        <p className="aside-right__button_p">Button pending styles</p>
-        <div className="aside-right__button__circle"></div>
+        <span></span>
+        <MdCircle size={18} color="#304c70" />
       </button>
     </div>
   );

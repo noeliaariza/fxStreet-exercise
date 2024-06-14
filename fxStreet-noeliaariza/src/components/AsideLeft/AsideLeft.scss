@@ -1,3 +1,28 @@
+@import "../../core/variables";
+
 .aside-left {
   display: none;
+}
+
+@media (min-width: $breakpoint-medium) {
+  .aside-left {
+    display: block;
+    width: 255px;
+    height: 100vh;
+    background-color: $blue_corp;
+    padding: 50px;
+    &__logo {
+      width: 163px;
+      height: auto;
+    }
+    &__nav {
+      margin-top: 120px;
+      li {
+        width: 111px;
+        height: 10px;
+        background-color: $white;
+        margin-top: 36px;
+      }
+    }
+  }
 }

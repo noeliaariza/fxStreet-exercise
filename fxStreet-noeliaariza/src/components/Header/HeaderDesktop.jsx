@@ -1,24 +1,29 @@
 import "./HeaderDesktop.scss";
+import { MdCircle } from "react-icons/md";
 
 function Header() {
   return (
-    <div className="header">
+    <nav className="header">
       <div className="header__back">
-        <div className="header__circle"></div>
-        <p></p>
+        <MdCircle size={18} color="#304c70" />
+        <a></a>
       </div>
-
-      <div>
-        <a className="header"></a>
-        <div className="header__circle"></div>
-        <div className="header__circle"></div>
-        <div className="header-profile">
-          <div className="header-profile__circle">
-            <p></p>
-          </div>
-        </div>
-      </div>
-    </div>
+      <ul className="header__menu">
+        <li>
+          <a className="highlight"></a>
+        </li>
+        <li>
+          <MdCircle size={18} color="#8c8d91" />
+        </li>
+        <li>
+          <MdCircle size={18} color="#8c8d91" />
+        </li>
+        <li>
+          <MdCircle size={18} color="#8c8d91" />
+          <a></a>
+        </li>
+      </ul>
+    </nav>
   );
 }
 

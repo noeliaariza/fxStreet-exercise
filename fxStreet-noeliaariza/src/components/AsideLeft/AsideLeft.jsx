@@ -5,12 +5,12 @@ function AsideLeft() {
   return (
     <div className="aside-left">
       <img
-        className="aside-left__logo-premium"
+        className="aside-left__logo"
         src={logo}
         alt="Fx Street Premium Logo"
       />
 
-      <ul className="aside-left__list">
+      <ul className="aside-left__nav">
         <li></li>
         <li></li>
         <li></li>
