@@ -1,12 +1,20 @@
 //import { useState } from "react";
-import "./App.scss";
+import AsideLeft from "./components/AsideLeft/AsideLeft";
+import AsideRight from "./components/AsideRight/AsideRight";
+import FilterNotices from "./components/FilterNotices/FilterNotices";
+import Header from "./components/Header/Header";
+import NoticeList from "./components/NoticeList/NoticeList";
 
 function App() {
   //const [count, setCount] = useState(0);
 
   return (
     <>
-      <p>fxStreet!</p>
+      <AsideLeft />
+      <Header />
+      <AsideRight />
+      <FilterNotices />
+      <NoticeList />
     </>
   );
 }
