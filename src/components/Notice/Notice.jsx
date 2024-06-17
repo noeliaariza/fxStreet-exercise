@@ -26,6 +26,7 @@ function Notice({
   const sanitizedContent = DOMPurify.sanitize(content);
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 
+  // setear visibilidad del popup
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const togglePopup = () => {
     setIsPopupVisible(!isPopupVisible);
@@ -78,7 +79,7 @@ function Notice({
         </div>
       </div>
 
-      {/* Renderiza el Popup de HideImprove si es visible */}
+      {/* Renderiza el Popup de HideImprove si variable isPopupVisible es true */}
       {isPopupVisible && (
         <div className="popup-overlay">
           <div className="popup-content">

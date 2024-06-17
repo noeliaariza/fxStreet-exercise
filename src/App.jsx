@@ -10,23 +10,29 @@ import { useFetch } from "./useFetch";
 import { useState } from "react";
 
 function App() {
+  // Recibe datos del fetch
   const { data, loading, error } = useFetch(
     "https://run.mocky.io/v3/96314262-67b1-455b-a2b2-ef1711d4634c"
   );
-  const [filter, setFilter] = useState("All");
-
-  const isDesktop = useMediaQuery({ minWidth: 1024 });
-
+  // variable para recoger data, y si no recibe datos, carga array vacío
   const notices = data || [];
 
+  // para manejar mediqueries y renderizar un componente u otro según res. de pantalla
+  const isDesktop = useMediaQuery({ minWidth: 1024 });
+
+  // useState para setear filter de inicio a valor Latest
+  const [filter, setFilter] = useState("All");
+
+  // método filter para filtrar por valor Popular
   const filteredNotices = notices.filter((notice) =>
     filter === "Popular" ? notice.isPopular : true
   );
-
+  // método de array para ordenar por fecha
   const sortedNotices = filteredNotices.sort(
     (a, b) => new Date(b.publicationTime) - new Date(a.publicationTime)
   );
 
+  //condicional para solo mostrar 2 en latest y 1 en popular
   let displayedNotices;
   if (filter === "Popular") {
     displayedNotices = sortedNotices.slice(0, 1);
