@@ -1,6 +1,7 @@
 import ContextualMenu from "../ContextualMenu/ContextualMenu";
 import LikeButton from "../LikeButton/LikeButton";
 import SaveButton from "../SaveButton/SaveButton";
+import HideImprove from "../HideImprove/HideImprove";
 import "./Notice.scss";
 
 import { TbFileSearch } from "react-icons/tb";
@@ -10,6 +11,7 @@ import { MdArrowRight } from "react-icons/md";
 import { format } from "date-fns";
 import DOMPurify from "dompurify";
 import PropTypes from "prop-types";
+import { useState } from "react";
 
 function Notice({
   category,
@@ -23,6 +25,11 @@ function Notice({
   const formattedDate = format(new Date(date), "MMM d, hh:mm a");
   const sanitizedContent = DOMPurify.sanitize(content);
   const isDesktop = useMediaQuery({ minWidth: 1024 });
+
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const togglePopup = () => {
+    setIsPopupVisible(!isPopupVisible);
+  };
 
   return (
     <div className="notice">
@@ -60,17 +67,25 @@ function Notice({
       {/* Notice Content */}
       <div className="notice__content">
         <p dangerouslySetInnerHTML={{ __html: sanitizedContent }}></p>
-        {/* <div className="notice__content__image">
-          <img src={image} alt={title} />
-        </div> */}
       </div>
 
       {/* Like - Save Button */}
       <div className="notice__like-save-section">
         <LikeButton />
         <SaveButton />
-        <ContextualMenu />
+        <div onClick={togglePopup}>
+          <ContextualMenu />
+        </div>
       </div>
+
+      {/* Renderiza el Popup de HideImprove si es visible */}
+      {isPopupVisible && (
+        <div className="popup-overlay">
+          <div className="popup-content">
+            <HideImprove />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

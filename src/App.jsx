@@ -29,9 +29,9 @@ function App() {
 
   let displayedNotices;
   if (filter === "Popular") {
-    displayedNotices = sortedNotices.slice(0, 1); // Muestra solo 1 noticia para 'Popular'
+    displayedNotices = sortedNotices.slice(0, 1);
   } else {
-    displayedNotices = sortedNotices.slice(0, 2); // Muestra 2 noticias para 'Latest' (o cualquier otro filtro no específico)
+    displayedNotices = sortedNotices.slice(0, 2);
   }
 
   return (

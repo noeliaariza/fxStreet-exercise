@@ -1,0 +1,31 @@
+@import "../../core/variables";
+
+.HideImprove {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -18px;
+  left: 207px;
+  width: 190px;
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 27px -19px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 0px 0px 27px -19px rgba(0, 0, 0, 0.56);
+  box-shadow: 0px 0px 27px -19px rgba(0, 0, 0, 0.56);
+
+  button {
+    padding: 10px;
+    text-align: left;
+    background-color: $white;
+    border: none;
+    color: $grey_49494F;
+    font-size: 16px;
+    display: flex;
+    align-content: center;
+    gap: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: $blue_304C70;
+      color: $white;
+    }
+  }
+}
