@@ -7,7 +7,7 @@
 @media (min-width: $breakpoint-large) {
   .aside-right {
     display: block;
-    margin: 25px;
+    margin: 25px 25px 0 5px;
 
     &__widget {
       width: 410px;
