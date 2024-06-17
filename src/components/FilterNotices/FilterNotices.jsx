@@ -1,13 +1,15 @@
 import "./FilterNotices.scss";
 import { CiFilter } from "react-icons/ci";
 
-function FilterNotices() {
+function FilterNotices({ setFilter }) {
   return (
     <>
       <div className="filter-notices-main">
         <div className="filter-notices-main__part01">
-          <a className="active">Latest</a>
-          <a>Popular</a>
+          <a onClick={() => setFilter("All")} className="active">
+            Latest
+          </a>
+          <a onClick={() => setFilter("Popular")}>Popular</a>
         </div>
         <div className="filter-notices__select desktop-only">
           <span>Show:</span>

@@ -5,7 +5,10 @@ import "./Notice.scss";
 
 import { TbFileSearch } from "react-icons/tb";
 import { TbClock } from "react-icons/tb";
-import avatar from "../../assets/images/avatar.png";
+import { useMediaQuery } from "react-responsive";
+import { MdArrowRight } from "react-icons/md";
+import { format } from "date-fns";
+import DOMPurify from "dompurify";
 
 function Notice({
   category,
@@ -18,6 +21,10 @@ function Notice({
   image,
   avatar,
 }) {
+  const formattedDate = format(new Date(date), "MMM d, hh:mm a");
+  const sanitizedContent = DOMPurify.sanitize(content);
+  const isDesktop = useMediaQuery({ minWidth: 1024 });
+
   return (
     <div className="notice">
       {/* Notice Header */}
@@ -27,12 +34,14 @@ function Notice({
             <TbFileSearch size={20} color="#304c70" />
             <p>{category}</p>
           </div>
-
-          <p className="notice__header__category--subcat">{subCategory}</p>
+          {isDesktop && <MdArrowRight size={20} color="#7598c4" />}
+          <span className="notice__header__category--subcat">
+            {subCategory}
+          </span>
         </div>
         <div className="notice__header__date">
           <TbClock size={20} color="#808d91" />
-          <span>{date}</span>
+          <span>{formattedDate}</span>
         </div>
       </div>
 
@@ -51,7 +60,7 @@ function Notice({
 
       {/* Notice Content */}
       <div className="notice__content">
-        <p>{content}</p>
+        <p dangerouslySetInnerHTML={{ __html: sanitizedContent }}></p>
         <div className="notice__content__image">
           <img src={image} alt="Image notice" />
         </div>
