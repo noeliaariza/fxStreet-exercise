@@ -8,8 +8,8 @@ Esta aplicación es un ejercicio técnico desarrollado por Noelia Ariza como par
 
 ## Tecnologías Utilizadas
 
-- **React**:
-- **Vite**:
-- **HTML**:
-- **CSS con Sass**:
-- **Metodología BEM**:
+- **React**
+- **Vite**
+- **HTML**
+- **CSS con Sass**
+- **Metodología BEM**
