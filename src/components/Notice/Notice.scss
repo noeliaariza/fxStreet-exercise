@@ -24,7 +24,7 @@
       &--cat {
         display: flex;
         align-items: center;
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 700;
         color: $blue_304C70;
       }
@@ -43,6 +43,7 @@
       span {
         color: $grey_49494F;
         font-weight: 300;
+        font-size: 13px;
       }
     }
   }
@@ -85,6 +86,11 @@
         color: $orange_E4871B;
         text-decoration: none;
         font-weight: 500;
+      }
+      img {
+        margin-top: 20px;
+        max-width: 600px;
+        height: auto;
       }
     }
     &__image {

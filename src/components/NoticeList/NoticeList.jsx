@@ -1,6 +1,5 @@
 import "./NoticeList.scss";
 import Notice from "../Notice/Notice";
-import noticeImage from "../../assets/images/image_webinar.png";
 import PropTypes from "prop-types";
 
 function NoticeList({ notices }) {
@@ -16,7 +15,6 @@ function NoticeList({ notices }) {
               date={notice.publicationTime}
               title={notice.title}
               content={notice.content}
-              image={noticeImage}
               avatar={notice.author.imageUrl}
               authorName={notice.author.name}
             />
@@ -37,7 +35,7 @@ NoticeList.propTypes = {
       title: PropTypes.string.isRequired,
       content: PropTypes.string.isRequired,
       author: PropTypes.shape({
-        imageUrl: PropTypes.string.isRequired,
+        imageUrl: PropTypes.string,
         name: PropTypes.string.isRequired,
       }).isRequired,
     })

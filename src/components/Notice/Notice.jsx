@@ -17,7 +17,6 @@ function Notice({
   date,
   title,
   content,
-  image,
   avatar,
   authorName,
 }) {
@@ -61,9 +60,9 @@ function Notice({
       {/* Notice Content */}
       <div className="notice__content">
         <p dangerouslySetInnerHTML={{ __html: sanitizedContent }}></p>
-        <div className="notice__content__image">
+        {/* <div className="notice__content__image">
           <img src={image} alt={title} />
-        </div>
+        </div> */}
       </div>
 
       {/* Like - Save Button */}
@@ -82,7 +81,6 @@ Notice.propTypes = {
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
   authorName: PropTypes.string.isRequired,
 };

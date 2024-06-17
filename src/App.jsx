@@ -27,6 +27,13 @@ function App() {
     (a, b) => new Date(b.publicationTime) - new Date(a.publicationTime)
   );
 
+  let displayedNotices;
+  if (filter === "Popular") {
+    displayedNotices = sortedNotices.slice(0, 1); // Muestra solo 1 noticia para 'Popular'
+  } else {
+    displayedNotices = sortedNotices.slice(0, 2); // Muestra 2 noticias para 'Latest' (o cualquier otro filtro no específico)
+  }
+
   return (
     <div className="container">
       <AsideLeft />
@@ -37,7 +44,7 @@ function App() {
             <FilterNotices setFilter={setFilter} />
             {error && <span>Ha ocurrido un error: {error}</span>}
             {loading && <span>Loading...</span>}
-            <NoticeList notices={sortedNotices} />
+            <NoticeList notices={displayedNotices} />
           </div>
           <AsideRight />
         </div>
