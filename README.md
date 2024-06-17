@@ -1,8 +1,15 @@
-# React + Vite
+# FXStreet News App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación desarrollada en React que muestra noticias financieras de FXStreet utilizando datos proporcionados por una API.
 
-Currently, two official plugins are available:
+## Descripción del Proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esta aplicación es un ejercicio técnico desarrollado por Noelia Ariza como parte de una entrevista técnica. La aplicación consume una API para mostrar las últimas noticias de FXStreet de manera clara y organizada.
+
+## Tecnologías Utilizadas
+
+- **React**:
+- **Vite**:
+- **HTML**:
+- **CSS con Sass**:
+- **Metodología BEM**:
