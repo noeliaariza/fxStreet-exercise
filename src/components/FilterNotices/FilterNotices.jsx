@@ -1,5 +1,6 @@
 import "./FilterNotices.scss";
 import { CiFilter } from "react-icons/ci";
+import PropTypes from "prop-types";
 
 function FilterNotices({ setFilter }) {
   return (
@@ -28,5 +29,9 @@ function FilterNotices({ setFilter }) {
     </>
   );
 }
+
+FilterNotices.propTypes = {
+  setFilter: PropTypes.func.isRequired,
+};
 
 export default FilterNotices;

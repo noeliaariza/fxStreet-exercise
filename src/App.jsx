@@ -23,6 +23,10 @@ function App() {
     filter === "Popular" ? notice.isPopular : true
   );
 
+  const sortedNotices = filteredNotices.sort(
+    (a, b) => new Date(b.publicationTime) - new Date(a.publicationTime)
+  );
+
   return (
     <div className="container">
       <AsideLeft />
@@ -33,7 +37,7 @@ function App() {
             <FilterNotices setFilter={setFilter} />
             {error && <span>Ha ocurrido un error: {error}</span>}
             {loading && <span>Loading...</span>}
-            <NoticeList notices={filteredNotices} />
+            <NoticeList notices={sortedNotices} />
           </div>
           <AsideRight />
         </div>
