@@ -1,6 +1,6 @@
 @import "../../core/variables";
 
-.HideImprove {
+.hide-improve {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -12,7 +12,7 @@
   -moz-box-shadow: 0px 0px 27px -19px rgba(0, 0, 0, 0.56);
   box-shadow: 0px 0px 27px -19px rgba(0, 0, 0, 0.56);
 
-  button {
+  &__button {
     padding: 10px;
     text-align: left;
     background-color: $white;

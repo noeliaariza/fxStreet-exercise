@@ -80,13 +80,7 @@ function Notice({
       </div>
 
       {/* Renderiza el Popup de HideImprove si variable isPopupVisible es true */}
-      {isPopupVisible && (
-        <div className="popup-overlay">
-          <div className="popup-content">
-            <HideImprove />
-          </div>
-        </div>
-      )}
+      {isPopupVisible && <HideImprove />}
     </div>
   );
 }

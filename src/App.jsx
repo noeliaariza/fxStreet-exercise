@@ -12,7 +12,7 @@ import { useState } from "react";
 function App() {
   // Recibe datos del fetch
   const { data, loading, error } = useFetch(
-    "https://run.mocky.io/v3/96314262-67b1-455b-a2b2-ef1711d4634c"
+    "https://fxsfrontend.fxstreet.workers.dev/"
   );
   // variable para recoger data, y si no recibe datos, carga array vacío
   const notices = data || [];
