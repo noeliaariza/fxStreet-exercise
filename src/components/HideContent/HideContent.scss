@@ -8,8 +8,8 @@
   -moz-box-shadow: 0px 0px 27px -19px rgba(0, 0, 0, 0.56);
   box-shadow: 0px 0px 27px -19px rgba(0, 0, 0, 0.56);
   position: absolute;
-  top: 0px;
-  left: 188px;
+  top: 84px;
+  left: 0px;
   background-color: $white;
 
   &__title {
@@ -29,6 +29,10 @@
     padding: 10px;
     font-size: 14px;
     color: $grey_49494F;
+    &:hover {
+      background-color: $blue_304C70;
+      color: $white;
+    }
     input {
       margin-right: 10px;
     }
@@ -56,5 +60,12 @@
         color: $white;
       }
     }
+  }
+}
+
+@media (min-width: $breakpoint-large) {
+  .hide-content {
+    top: 0px;
+    left: 188px;
   }
 }
