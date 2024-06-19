@@ -31,9 +31,9 @@ Sigue estos pasos para clonar y levantar el proyecto localmente:
 
 1. **Clonar el repositorio**:
 
-   ```bash
-   git clone https://github.com/noeliaariza/FXStreetNewsApp.git
-   ```
+```bash
+git clone https://github.com/noeliaariza/FXStreetNewsApp.git
+```
 
 ## Navegar al directorio del proyecto e instala las dependencias:
 
