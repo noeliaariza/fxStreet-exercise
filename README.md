@@ -1,4 +1,4 @@
-![Logo FXStreet](https://noeliaaariza.github.io/fxStreet-exercise/assets/logo_fx-BzHiNmuJ.svg)
+![Logo FXStreet](https://about.fxstreet.com/wp-content/uploads/2016/07/fxs_logo_blueback_screen.png)
 
 # FXStreet News App
 
