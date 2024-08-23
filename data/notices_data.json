@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "feed": "Economía",
+    "subFeed": "Finanzas",
+    "publicationTime": "2023-08-01T12:00:00Z",
+    "title": "Noticia sobre economía global",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat purus at magna dictum, vitae sodales turpis tristique. Nam scelerisque lectus vel augue tincidunt, vel tempor elit varius.",
+    "author": {
+      "imageUrl": "https://i.pravatar.cc/100",
+      "name": "Juan Pérez"
+    },
+    "isPopular": true
+  },
+  {
+    "id": 2,
+    "feed": "Tecnología",
+    "subFeed": "Innovación",
+    "publicationTime": "2023-08-02T14:00:00Z",
+    "title": "Nuevas tendencias tecnológicas",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque nunc ac nisl vestibulum, ac cursus lacus interdum. Integer imperdiet velit in sapien varius, ac sodales felis faucibus.",
+    "author": {
+      "imageUrl": "https://i.pravatar.cc/100",
+      "name": "María López"
+    },
+    "isPopular": false
+  },
+  {
+    "id": 3,
+    "feed": "Deportes",
+    "subFeed": "Fútbol",
+    "publicationTime": "2023-08-03T16:00:00Z",
+    "title": "Resultados de la liga de fútbol",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec libero at ipsum laoreet malesuada non vitae felis. Proin ut nisi ac erat tincidunt consectetur sed in odio.",
+    "author": {
+      "imageUrl": "https://i.pravatar.cc/100",
+      "name": "Carlos García"
+    },
+    "isPopular": true
+  },
+  {
+    "id": 4,
+    "feed": "Salud",
+    "subFeed": "Nutrición",
+    "publicationTime": "2023-08-04T10:00:00Z",
+    "title": "Consejos para una alimentación saludable",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies felis et metus tempus, in efficitur orci faucibus. Curabitur pharetra mauris non ligula facilisis, nec fermentum risus auctor.",
+    "author": {
+      "imageUrl": "https://i.pravatar.cc/100",
+      "name": "Ana Sánchez"
+    },
+    "isPopular": false
+  },
+  {
+    "id": 5,
+    "feed": "Cultura",
+    "subFeed": "Arte",
+    "publicationTime": "2023-08-05T09:00:00Z",
+    "title": "Exposición de arte contemporáneo",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Aenean at nisi eu ligula pretium malesuada. Ut dictum tortor nec massa dapibus, in convallis est volutpat.",
+    "author": {
+      "imageUrl": "https://i.pravatar.cc/100",
+      "name": "Luis Martínez"
+    },
+    "isPopular": true
+  },
+  {
+    "id": 6,
+    "feed": "Economía",
+    "subFeed": "Mercados",
+    "publicationTime": "2023-08-06T13:00:00Z",
+    "title": "Fluctuaciones en los mercados financieros",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget metus sed augue hendrerit placerat. Cras nec urna a erat scelerisque faucibus ut id nulla.",
+    "author": {
+      "imageUrl": "https://i.pravatar.cc/100",
+      "name": "Carmen Rodríguez"
+    },
+    "isPopular": false
+  },
+  {
+    "id": 7,
+    "feed": "Tecnología",
+    "subFeed": "Gadgets",
+    "publicationTime": "2023-08-07T11:00:00Z",
+    "title": "Nuevos lanzamientos de smartphones",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet purus id dolor tincidunt, ac venenatis nunc placerat. In venenatis elit ac ante dapibus fermentum.",
+    "author": {
+      "imageUrl": "https://i.pravatar.cc/100",
+      "name": "Pedro Gómez"
+    },
+    "isPopular": true
+  },
+  {
+    "id": 8,
+    "feed": "Deportes",
+    "subFeed": "Tenis",
+    "publicationTime": "2023-08-08T15:00:00Z",
+    "title": "Resultados del torneo de tenis",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacinia magna nec neque tincidunt, id aliquet purus congue. Phasellus suscipit urna vel purus malesuada, sit amet tincidunt ligula sodales.",
+    "author": {
+      "imageUrl": "https://i.pravatar.cc/100",
+      "name": "Sara Torres"
+    },
+    "isPopular": false
+  },
+  {
+    "id": 9,
+    "feed": "Salud",
+    "subFeed": "Fitness",
+    "publicationTime": "2023-08-09T08:00:00Z",
+    "title": "Ejercicios para mantenerse en forma",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi facilisis lectus nec quam vulputate, nec fringilla nunc lacinia. Sed ut mi quis lectus malesuada accumsan.",
+    "author": {
+      "imageUrl": "https://i.pravatar.cc/100",
+      "name": "David Fernández"
+    },
+    "isPopular": true
+  },
+  {
+    "id": 10,
+    "feed": "Cultura",
+    "subFeed": "Cine",
+    "publicationTime": "2023-08-10T17:00:00Z",
+    "title": "Estrenos de películas en agosto",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et mi ac nulla fermentum commodo. Phasellus in orci a erat tempus sodales non a orci.",
+    "author": {
+      "imageUrl": "https://i.pravatar.cc/100",
+      "name": "Laura Ruiz"
+    },
+    "isPopular": false
+  },
+  {
+    "id": 11,
+    "feed": "Economía",
+    "subFeed": "Empresas",
+    "publicationTime": "2023-08-11T12:30:00Z",
+    "title": "Fusiones y adquisiciones recientes",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dictum ligula ut tortor congue, id lacinia nisl tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada.",
+    "author": {
+      "imageUrl": "https://i.pravatar.cc/100",
+      "name": "José Ramírez"
+    },
+    "isPopular": true
+  },
+  {
+    "id": 12,
+    "feed": "Tecnología",
+    "subFeed": "Software",
+    "publicationTime": "2023-08-12T14:30:00Z",
+    "title": "Actualizaciones de software más esperadas",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget quam nec urna malesuada bibendum. Proin a lorem vitae turpis condimentum blandit nec ac lorem.",
+    "author": {
+      "imageUrl": "https://i.pravatar.cc/100",
+      "name": "Gloria Vega"
+    },
+    "isPopular": false
+  },
+  {
+    "id": 13,
+    "feed": "Deportes",
+    "subFeed": "Baloncesto",
+    "publicationTime": "2023-08-13T16:30:00Z",
+    "title": "Partidos destacados de baloncesto",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a dui id dolor gravida vestibulum a vel turpis. Etiam accumsan lectus eu odio malesuada, eget ultricies arcu tristique.",
+    "author": {
+      "imageUrl": "https://i.pravatar.cc/100",
+      "name": "Miguel Castillo"
+    },
+    "isPopular": true
+  },
+  {
+    "id": 14,
+    "feed": "Salud",
+    "subFeed": "Bienestar",
+    "publicationTime": "2023-08-14T10:30:00Z",
+    "title": "Consejos para una vida equilibrada",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Suspendisse potenti. Integer laoreet felis eget velit lacinia, at pretium odio ullamcorper.",
+    "author": {
+      "imageUrl": "https://i.pravatar.cc/100",
+      "name": "Sofía Morales"
+    },
+    "isPopular": false
+  },
+  {
+    "id": 15,
+    "feed": "Cultura",
+    "subFeed": "Música",
+    "publicationTime": "2023-08-15T18:30:00Z",
+    "title": "Conciertos y festivales de verano",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum magna vel nulla convallis, sit amet tincidunt dolor tristique. Vivamus in felis vitae sapien aliquam fermentum.",
+    "author": {
+      "imageUrl": "https://i.pravatar.cc/100",
+      "name": "Andrés Gil"
+    },
+    "isPopular": true
+  }
+]
