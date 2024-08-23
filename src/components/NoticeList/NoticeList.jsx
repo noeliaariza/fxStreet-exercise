@@ -1,11 +1,14 @@
-import "./NoticeList.scss";
-import Notice from "../Notice/Notice";
-import PropTypes from "prop-types";
+import './NoticeList.scss';
+import Notice from '../Notice/Notice';
+import PropTypes from 'prop-types';
 
 function NoticeList({ notices }) {
+  if (!Array.isArray(notices)) {
+    return <span>Invalid data</span>;
+  }
   return (
-    <div className="notices-list">
-      <ul className="notices-list__ul">
+    <div className='notices-list'>
+      <ul className='notices-list__ul'>
         <li>
           {notices?.map((notice) => (
             <Notice
