@@ -1,4 +1,4 @@
-![Logo FXStreet](https://about.fxstreet.com/wp-content/uploads/2016/07/fxs_logo_blueback_screen.png)
+<img src="https://about.fxstreet.com/wp-content/uploads/2016/07/fxs_logo_blueback_screen.png" alt="Logo FXStreet" width="200" height="auto">
 
 # FXStreet News App
 
